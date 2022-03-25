@@ -88,6 +88,6 @@ function output_csv_PC(){
         }
     }
     
-    download(data, 'filename.csv');
+    download(data, 'geolocation.csv');
 }
 
