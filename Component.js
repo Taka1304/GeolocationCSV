@@ -37,10 +37,10 @@ function getGeolocation(){
     }
     
 }
-function stopGeolocation(){
-    navigator.geolocation.clearWatch(geoId);
-    // console.log("stop")
-}
+// function stopGeolocation(){
+//     navigator.geolocation.clearWatch(geoId);
+//     // console.log("stop")
+// }
 function arrToCSV(geoData){
     /**
      * 各フィールドの囲い -> ダブルクォーテーション
@@ -53,17 +53,17 @@ function arrToCSV(geoData){
      .map(row => row.join(','))
      .join('\n');
 };
-function output_csv_Safari(){
+// function output_csv_Safari(){
     
-    const data = arrToCSV(geoData);
-    function download(data) {
-        // utf8
-        const bom = '\uFEFF';
-        window.location.href =
-          'data:attachment/csv;charset=utf-8,' + encodeURIComponent(bom + data);
-      }
-    download(data);
-}
+//     const data = arrToCSV(geoData);
+//     function download(data) {
+//         // utf8
+//         const bom = '\uFEFF';
+//         window.location.href =
+//           'data:attachment/csv;charset=utf-8,' + encodeURIComponent(bom + data);
+//       }
+//     download(data);
+// }
 function output_csv_PC(){
     const data = arrToCSV(geoData);
 
