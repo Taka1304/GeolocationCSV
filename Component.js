@@ -39,6 +39,7 @@ function getGeolocation(){
 }
 function stopGeolocation(){
     navigator.geolocation.clearWatch(geoId);
+    // console.log("stop")
 }
 function arrToCSV(geoData){
     /**
